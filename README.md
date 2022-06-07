@@ -6,6 +6,9 @@
 ## Overview of the project
 <p>The project was to make a static single page based Webpage. This project is my personal portfolio,showcasing some of my favourite works, along with their code and demos</p>
 
+## Screenshot
+![screenshot](https://github.com/sidramwaseem/WE-Assignment/blob/main/preview/s1.png?raw=true)
+
 ## Build with
 - HTML
 - CSS:
