@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <h1>Portfolio</h1>
+        <ul class="nav-list">
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="aboutme" class="aboutMe--sec">
+        <div class="aboutMe--text">
+          <h1>
+            Hello, <span class="red">I'm</span>
+            <span class="break"></span> Sidra Waseem
+          </h1>
+          <h3 class="red">Front-end Developer</h3>
+          <p>
+            I am a persistent, creative and competitive individual who gives
+            whatever it takes to reach the desired goal. I am always
+            enthusiastic about my work and I am committed to self-development so
+            I can achieve better results.
+          </p>
+          <p>Furthermore, I am flexible and can easily switch between tasks.</p>
+        </div>
+        <div class="follow-div">
+          Follow me on: <span class="line"></span>
+          <a href="https://github.com/sidramwaseem" target="_blank"
+            ><i class="fa fa-brands fa-github"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/sidramwaseem/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="https://twitter.com/sidramwaseem" target="_blank"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+        </div>
+      </section>
+
+      <section id="services" class="service-section">
+        <h1 class="service-heading">Services</h1>
+        <div class="service--grid-container">
+          <div class="service-grid">
+            <i class="fa-solid fa-desktop fa-3x service-icon"></i>
+            <h2>Front-end Website Creation</h2>
+            <p>
+              Development of eye-pleasing professional front-end of the
+              websites, blogs and stores etc.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <i class="fa-solid fa-mobile-screen-button fa-3x service-icon"></i>
+            <h2>Responsive Sites</h2>
+            <p>
+              Creation of responsive sites for the best viewing at all
+              resolutions.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <i class="fa-brands fa-react fa-3x service-icon"></i>
+            <h2>React Front-end Development</h2>
+            <p>
+              Creation of professional and rich UI webpages using ReactJS
+              library.
+            </p>
+          </div>
+
+          <div class="service-grid">
+            <i class="fa-solid fa-bullhorn fa-3x service-icon"></i>
+            <h2>Semantic Code</h2>
+            <p>
+              Strategy for your websites to appear better and better in
+              searches.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="skill-section" id="skills">
+        <h1 class="skill-heading">Skills</h1>
+        <div class="skill--grid-container">
+          <i class="fa-brands fa-html5 fa-5x html-icon"></i>
+          <i class="fa-brands fa-css3-alt fa-5x css-icon"></i>
+          <i class="fa-brands fa-js fa-5x js-icon"></i>
+          <i class="fa-brands fa-bootstrap fa-5x bootstrap-icon"></i>
+          <i class="fa-brands fa-react fa-5x react-icon"></i>
+          <i class="fa-brands fa-python fa-5x python-icon"></i>
+          <i class="fa-brands fa-git-alt fa-5x git-icon"></i>
+          <i class="fa-brands fa-github fa-5x github-icon"></i>
+        </div>
+      </section>
+
+      <section class="portfolio-section" id="portfolio">
+        <h1 class="portfolio-heading">Portfolio</h1>
+        <div class="portfolio--grid-container">
+          <div class="portfolio-grid" id="grid1">
+            <figure class="project-fig">
+              <img src="/images/project1.png" alt="" />
+              <figcaption>#HTML #CSS #BOOTSTRAP #RESPONSIVE</figcaption>
+            </figure>
+            <h3>Recipe Blog</h3>
+            <p>
+              In this project I worked with HTML and CSS along with BOOTSTRAP
+              framework to create this responsive page. This page is similar to
+              the design provided as challenge by devChallenges.io
+            </p>
+            <div class="buttons">
+              <button class="demo-btn btn">
+                <a target="_blank" href="https://recipe-page-devio.netlify.app/"
+                  >Demo</a
+                >
+              </button>
+              <button class="code-btn btn">
+                <a
+                  target="_blank"
+                  href="https://github.com/sidramwaseem/Recipe-page"
+                  >Code</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-grid" id="grid2">
+            <figure class="project-fig">
+              <img src="/images/project2.png" alt="" />
+              <figcaption>#HTML #CSS #GRID #RESPONSIVE</figcaption>
+            </figure>
+            <h3>My Gallery</h3>
+            <p>
+              In this project I worked with HTML and CSS (used CSS Grid
+              Property) only to create this responsive page. This page is
+              similar to the design provided as challenge by devChallenges.io
+            </p>
+            <div class="buttons">
+              <button class="demo-btn btn">
+                <a target="_blank" href="https://gallery-challenge.netlify.app/"
+                  >Demo</a
+                >
+              </button>
+              <button class="code-btn btn">
+                <a
+                  target="_blank"
+                  href="https://github.com/sidramwaseem/Gallery-Challenge"
+                  >Code</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-grid" id="grid3">
+            <figure class="project-fig">
+              <img src="/images/project3.png" alt="" />
+              <figcaption>#HTML #CSS #FLEXBOX #RESPONSIVE</figcaption>
+            </figure>
+            <h3>Checkout Page</h3>
+            <p>
+              In this project I worked with HTML and CSS (used FLEXBOX property)
+              to create this responsive page. This page is similar to the design
+              provided as challenge by devChallenges.io
+            </p>
+            <div class="buttons">
+              <button class="demo-btn btn">
+                <a
+                  target="_blank"
+                  href="https://checkout-page-devio.netlify.app/"
+                  >Demo</a
+                >
+              </button>
+              <button class="code-btn btn">
+                <a
+                  target="_blank"
+                  href="https://github.com/sidramwaseem/Checkout-Page"
+                  >Code</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <div class="portfolio-grid" id="grid4">
+            <figure class="project-fig">
+              <img src="/images/project4.png" alt="" />
+              <figcaption>
+                #HTML #CSS #BOOTSTRAP #FLEXBOX #RESPONSIVE
+              </figcaption>
+            </figure>
+            <h3>Edie Homepage</h3>
+            <p>
+              A complete responsive landing page for a business using HTML,CSS
+              and BOOSTRAP columns.This page is similar to the design provided
+              as challenge by devChallenges.io
+            </p>
+            <div class="buttons">
+              <button class="demo-btn btn">
+                <a
+                  target="_blank"
+                  href="https://edie-homepage-devio.netlify.app/"
+                  >Demo</a
+                >
+              </button>
+              <button class="code-btn btn">
+                <a
+                  target="_blank"
+                  href="https://github.com/sidramwaseem/Edie-Homepage-Challenge"
+                  >Code</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-grid" id="grid5">
+            <figure class="project-fig">
+              <img src="/images/project5.png" alt="" />
+              <figcaption>#HTML #CSS #FLEXBOX #RESPONSIVE</figcaption>
+            </figure>
+            <h3>Interior Consultancy</h3>
+            <p>
+              Made this interior design consultancy page using vanilla HTMl and
+              CSS.Flexbox property of CSS was also used.This page is similar to
+              the design provided as challenge by devChallenges.io
+            </p>
+            <div class="buttons">
+              <button class="demo-btn btn">
+                <a
+                  target="_blank"
+                  href="https://interior-consultant-challenge-devio.netlify.app/"
+                  >Demo</a
+                >
+              </button>
+              <button class="code-btn btn">
+                <a
+                  target="_blank"
+                  href="https://github.com/sidramwaseem/Interior-Consultant-Challenge"
+                  >Code</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="portfolio-grid" id="grid6">
+            <figure class="project-fig">
+              <img src="/images/project6.png" alt="" />
+              <figcaption>#HTML #CSS #JAVASCRIPT #RESPONSIVE</figcaption>
+            </figure>
+            <h3>Grade Calculator</h3>
+            <p>
+              Made this interior design consultancy page using vanilla HTMl and
+              CSS.Flexbox property of CSS was also used.This page is similar to
+              the design provided as challenge by devChallenges.io
+            </p>
+            <div class="buttons">
+              <button class="demo-btn btn">
+                <a
+                  target="_blank"
+                  href="https://grade-calculator-js.netlify.app/"
+                  >Demo</a
+                >
+              </button>
+              <button class="code-btn btn">
+                <a
+                  target="_blank"
+                  href="https://github.com/sidramwaseem/Grade-Calculator-JS"
+                  >Code</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <p class="repos-link"> <a href="https://github.com/sidramwaseem?tab=repositories">Checkout all repositories on Github →</a></p>
+
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="contact-container">
+          <h3>Let's have <span class="red">Chai</span>?</h3>
+          <a class="email-link" href="mailto:sidraw24@gmail.com" target="_blank" rel="noreferrer">
+            <button class="email-btn">
+              <img class="email-icon" src="./images/Icon.png" alt="Email-icon" />
+              <p>Email</p>
+            </button>
+            <div class="social-links">
+              <a href="https://github.com/sidramwaseem" target="_blank"
+              ><i class="fa fa-brands fa-github fa-2x github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/sidramwaseem/" target="_blank"
+              ><i class="fa-brands fa-linkedin-in fa-2x linkedin"></i
+            ></a>
+            <a href="https://twitter.com/sidramwaseem" target="_blank"
+              ><i class="fa-brands fa-twitter fa-2x twitter"></i
+            ></a>
+            </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="footer">
+      <p>&copy;Sidra -2022 | all rights reserved</p>
+    </footer>
+  </body>
+</html>
