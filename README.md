@@ -20,3 +20,8 @@
 - Will Add more projects.
 - Will Add more skills in the "Skills" section (Fingers crossed).
 - Will add animations, since they enhance the UX.
+
+## Contact Me
+- LinkedIn - [sidramwaseem](https://www.linkedin.com/in/sidramwaseem/)
+- Twitter - [sidramwaseem](https://www.twitter.com/sidramwaseem)
+- Instagram - [sidramwaseem](https://www.instagram.com/sidramwaseem)
