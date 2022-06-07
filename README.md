@@ -1,12 +1,12 @@
 # WE Assignment - Personal Portfolio
 
-##Demo
+## Demo
 <p>Not available right now</p>
 
 ## Overview of the project
 <p>The project was to make a static single page based Webpage. This project is my personal portfolio,showcasing some of my favourite works, along with their code and demos</p>
 
-##Build with
+## Build with
 - HTML
 - CSS:
      - Flexbox
