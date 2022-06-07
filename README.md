@@ -1,1 +1,1 @@
-"# WE Assignment - Personal Portfolio" 
+# WE Assignment - Personal Portfolio
