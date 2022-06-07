@@ -1,7 +1,7 @@
 # WE Assignment - Personal Portfolio
 
 ## Demo
-<p>Not available right now</p>
+<p>Visit: https://sidrawaseem.netlify.app/</p>
 
 ## Overview of the project
 <p>The project was to make a static single page based Webpage. This project is my personal portfolio,showcasing some of my favourite works, along with their code and demos</p>
