@@ -10,23 +10,100 @@ body {
 }
 
 /***** NAVBAR *****/
-
-#navbar {
+.Navbar {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 16px;
+  font-family: sans-serif;
+  color: white;
+  box-shadow: 0px 15px 10px -15px #111;
+  transition: 0.3ms;
   background: transparent;
   background-color: #212f45;
 }
 
-#navbar > h1 {
+.Navbar__Link {
+  padding-right: 8px;
+  transition:0.3ms;
+}
+.Navbar__Link-brand {
   font-size: 26px;
   font-family: "Playfair Display", serif;
   font-weight: 800;
   color: #e62c45;
 }
+
+.Navbar__Items {
+  display: flex;
+  transition:0.3ms;
+}
+
+.Navbar__Items--right {
+  margin-left: auto;
+  transition:0.3ms;
+}
+
+.Navbar__Link{
+  display: inline-block;
+  margin-right: 30px;
+  font-size: 18px;
+  transition:0.3ms;
+}
+
+.Navbar__Link a {
+  list-style: none;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  transition: 0.6s;
+}
+.Navbar__Link a:hover{
+  color: #e62c45;
+  border-bottom: 2px solid #e62c45;
+}
+
+.Navbar__Link-toggle {
+  display: none;
+  transition: 0.3ms;
+  font-size: 1.5rem;
+}
+.white{
+  color:#fff;
+}
+@media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+
+  .Navbar__Items {
+    display: none;
+  }
+
+  .Navbar__Items--right {
+    margin-left: 0;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+  .Navbar__Link a{
+    margin-top: 10px;
+    line-height: 40px;
+    text-align: center;
+    transition:0.3ms;
+  }
+
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+}
+
 
 .nav-list li {
   display: inline-block;
@@ -167,7 +244,7 @@ body {
   margin: 20px 50px;
 }
 
-.html-icon{
+.html-icon {
   color: #e34c26;
 }
 .css-icon {
@@ -189,31 +266,29 @@ body {
   background-clip: text;
   color: transparent;
 }
-.git-icon{
+.git-icon {
   color: #f1502f;
 }
 .github-icon {
   color: #171515;
 }
 
-
 /***Portfolio Section***/
 
-.portfolio-section{
-  font-family: 'Montserrat', sans-serif;
+.portfolio-section {
+  font-family: "Montserrat", sans-serif;
   background-color: #006466;
 }
 
-.portfolio--grid-container{
+.portfolio--grid-container {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 20px;
-  
+
   margin: 30px 60px;
 }
 
-.portfolio-grid{
- 
+.portfolio-grid {
   max-width: 300px;
   margin: 30px;
   padding: 10px;
@@ -221,38 +296,38 @@ body {
   background-color: #212f45;
 }
 
-.portfolio-grid> h3{
+.portfolio-grid > h3 {
   margin-bottom: 10px;
   font-weight: 700;
-  font-size:17px;
+  font-size: 17px;
 }
-.portfolio-grid > p{
+.portfolio-grid > p {
   font-weight: 400;
-  font-size:12px;
+  font-size: 12px;
   margin-bottom: 20px;
 }
 
-.project-fig{
+.project-fig {
   width: 100%;
 }
 
-.project-fig > img{
+.project-fig > img {
   width: 100%;
 }
 
-.project-fig > figcaption{
+.project-fig > figcaption {
   color: #eee;
-  font-size:10px;
+  font-size: 10px;
   margin-bottom: 10px;
 }
 
-.buttons{
-  display:flex;
+.buttons {
+  display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
-.btn{
+.btn {
   width: 80px;
   border-radius: 16px;
   padding: 6px;
@@ -260,59 +335,57 @@ body {
   margin-bottom: 8px;
 }
 
-.btn > a{
+.btn > a {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
-  font-weight:700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
-.demo-btn{
+.demo-btn {
   background-color: #e62c45;
 }
 
-.demo-btn>a{
+.demo-btn > a {
   color: #fff;
 }
 
-.code-btn{
+.code-btn {
   border: 3px solid #e62c45;
 }
-.code-btn>a{
+.code-btn > a {
   color: #e62c45;
 }
 
-
-.repos-link{
+.repos-link {
   text-align: center;
   padding: 15px;
 }
 
-.repos-link > a{
+.repos-link > a {
   color: #e62c45;
- text-decoration: none;
- transition:0.5s;
- font-family: 'Montserrat', sans-serif;
- font-weight:700;
-
+  text-decoration: none;
+  transition: 0.5s;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
-.repos-link > a:hover{
+.repos-link > a:hover {
   border-bottom: 2px solid #e62c45;
 }
 
 /*** Contact Section ***/
 
-.contact-container{
+.contact-container {
   text-align: center;
   max-width: 300px;
   margin: 30px auto;
-  border-radius:50% ;
+  border-radius: 50%;
   border: 2px dotted #e62c45;
   padding: 20px 0;
 }
-.contact-container>h3{
-  font-family: 'Montserrat', sans-serif;
-  font-weight:700;
+.contact-container > h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   padding: 15px;
   margin-bottom: 10px;
 }
@@ -335,8 +408,8 @@ body {
   border-radius: 6px;
   transition: 0.6s;
   color: #000;
-  font-family: 'Montserrat', sans-serif;
-font-weight:700;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 
 .email-btn:hover {
@@ -347,39 +420,37 @@ font-weight:700;
   margin-right: 9.6px;
 }
 
-.social-links{
- 
+.social-links {
   width: 100%;
   text-align: center;
   margin-top: 20px;
 }
 
-.social-links>a{
-  position:relative;
+.social-links > a {
+  position: relative;
 }
 
-.social-links a i{
- padding: 10px;
+.social-links a i {
+  padding: 10px;
 }
-.github{
+.github {
   color: #171515;
 }
-.linkedin{
+.linkedin {
   color: #0077b5;
 }
-.twitter{
+.twitter {
   color: #08a0e9;
 }
 
-.footer{
-  border-top:1px solid #dbdbdb;
+.footer {
+  border-top: 1px solid #dbdbdb;
   background-color: #006466;
   text-align: center;
   padding: 20px;
   font-family: "Playfair Display", serif;
-font-weight: 800;
-  }
-
+  font-weight: 800;
+}
 
 /***** MEDIA QUERIES *****/
 
@@ -394,8 +465,8 @@ font-weight: 800;
 }
 
 @media only screen and (max-width: 840px) {
-  .portfolio--grid-container{
-    grid-template-columns: repeat(2,1fr);
+  .portfolio--grid-container {
+    grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 20px;
     margin: 30px 30px;
   }
@@ -424,6 +495,7 @@ font-weight: 800;
   .aboutMe--sec {
     flex-direction: column;
     text-align: center;
+    background-image: none;
   }
 
   .follow-div {
@@ -441,17 +513,17 @@ font-weight: 800;
   }
 }
 
-@media only screen and (max-width: 540px){
-  .portfolio--grid-container{
-    grid-template-columns: repeat(1,1fr);
+@media only screen and (max-width: 540px) {
+  .portfolio--grid-container {
+    grid-template-columns: repeat(1, 1fr);
     grid-row-gap: 10px;
     margin: 20px;
     text-align: center;
   }
-  .portfolio-grid{
+  .portfolio-grid {
     margin: 20px auto;
   }
-  .skill--grid-container{
+  .skill--grid-container {
     margin: 10px 10px;
   }
 }
