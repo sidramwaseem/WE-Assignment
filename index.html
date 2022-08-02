@@ -22,16 +22,31 @@
   </head>
   <body>
     <header>
-      <nav id="navbar">
-        <h1>Portfolio</h1>
-        <ul class="nav-list">
-          <li><a href="#aboutme">About me</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact me</a></li>
-        </ul>
-      </nav>
+      <div class="Navbar">
+        <div class="Navbar__Link-brand">
+           Portfolio<span class="white">.</span>
+         </div>
+         <div class="Navbar__Link Navbar__Link-toggle">
+           <i class="fas fa-bars" id="menu-btn"></i>
+         </div>
+       <nav class="Navbar__Items Navbar__Items--right">
+         <div class="Navbar__Link">
+           <a href="#">About me</a>
+         </div>
+         <div class="Navbar__Link">
+          <a href="#">Services</a>
+         </div>
+         <div class="Navbar__Link">
+          <a href="#">Skills</a>
+        </div>
+        <div class="Navbar__Link">
+          <a href="#">Portfolio</a>
+        </div>
+        <div class="Navbar__Link">
+          <a href="#">Contact me</a>
+        </div>
+       </nav>
+     </div>
     </header>
 
     <main>
@@ -322,5 +337,6 @@
     <footer class="footer">
       <p>&copy;Sidra -2022 | all rights reserved</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>
