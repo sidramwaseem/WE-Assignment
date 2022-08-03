@@ -128,7 +128,8 @@ body {
 
 .aboutMe--sec {
   height: 100vh;
-  background-image: url("./images/constellations.png");
+  background-image: url("./images/blob-overlay.png");
+  background-size: 42em;
   background-repeat: no-repeat;
   background-position: right center;
   display: flex;
@@ -546,3 +547,4 @@ body {
   display: inline-block;
   line-height: 1em;
 }
+
